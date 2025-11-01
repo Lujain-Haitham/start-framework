@@ -1,0 +1,15 @@
+<div  class="inner position-relative">
+    <div (click)="openModal()" class="layer bg-scndry w-100 h-100 rounded position-absolute d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-plus text-white"></i>
+    </div>         
+    <img class="w-100 rounded" src="{{image}}" alt="">
+</div>
+
+@if (showModal) {
+<app-modal
+ [close]="closeModal"
+>
+    <img class="w-100
+    " src="{{image}}" alt="">
+</app-modal> 
+}

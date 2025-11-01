@@ -1,0 +1,6 @@
+.hidden{
+    top: 40px !important;
+}
+label{
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,10 @@
+.line{
+    width: 80px;
+    height: 4px;
+}
+.text-main{
+    color: var(--main-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}

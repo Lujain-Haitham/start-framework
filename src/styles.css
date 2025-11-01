@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color: #2C3E50;
+    --secondary-color: #1ABC9C;
+    --tertiary-color:#1A252F;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-scndry{
+    background-color: var(--secondary-color);
+}
+.bg-tertiary{
+    background-color: var(--tertiary-color);
+}
+.text-scndry{
+    color: var(--secondary-color);
+}

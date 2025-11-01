@@ -1,0 +1,19 @@
+<div class="vh-100 py-5">
+    <div class="container">
+        <app-title [componentName]="componentName" [dark]="isDark"></app-title>
+        <div class="d-flex justify-content-center align-items-center py-5 mt-3">
+        <form class="w-50">
+            <label [class.hidden]="!activeName" class="ps-1 text-scndry position-relative top-0 z-n1 hidden" for="userName">User Name :</label>
+            <input (input)="activeName = showLabel($event)" id="userName" class="form-control p-3 border-0 border-bottom mb-4" placeholder="user name" type="text">
+            <label [class.hidden]="!activeAge" class="ps-1 text-scndry position-relative top-0 z-n1 hidden" for="userAge">User Number :</label>
+            <input (input)="activeAge = showLabel($event)" id="userAge" class="form-control p-3 border-0 border-bottom mb-4" placeholder="user age" type="number">
+            <label [class.hidden]="!activeEmail" class="ps-1 text-scndry position-relative top-0 z-n1 hidden" for="userEmail">User Email :</label>
+            <input (input)="activeEmail = showLabel($event)" id="userEmail" class="form-control p-3 border-0 border-bottom mb-4" placeholder="user email" type="email">
+            <label [class.hidden]="!activePassword" class="ps-1 text-scndry position-relative top-0 z-n1 hidden" for="password">User Password :</label>
+            <input (input)="activePassword = showLabel($event)" id="password" class="form-control p-3 border-0 border-bottom mb-4" placeholder="user password" type="password">
+            <button class="rounded bg-scndry border-0 p-2 text-white">send message</button>
+        </form>
+        </div>
+        
+    </div>
+</div>

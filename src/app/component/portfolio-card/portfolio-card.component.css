@@ -1,0 +1,9 @@
+.layer{
+    font-size: 4rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.layer:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
